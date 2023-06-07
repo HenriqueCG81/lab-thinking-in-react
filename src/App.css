@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  padding: 20px;
+  background-color: ghostwhite;
+  margin: 50px;
 }
 
 .App-logo {
@@ -35,4 +38,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.product-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-table tbody tr:hover {
+  background-color: #eaeaea;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type='text'] {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.product-table tr:last-child td {
+  border-bottom: none;
+}
+
+.product-table tr.out-of-stock {
+  color: red;
 }
